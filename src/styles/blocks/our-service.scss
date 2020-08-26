@@ -1,0 +1,50 @@
+.our-service {
+    margin-bottom: 52px;
+
+    &__card {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &:nth-child(even) .service__text {
+            order: 2;
+        }
+    }
+
+    &__title {
+        @include section-title;
+        color: #363636;
+    }
+
+    &__wrapper {    
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .our-service {
+        margin-bottom: 0;
+
+        &__title {
+            @include section-title_sm;
+        }
+        
+        &__card {
+            flex-wrap: wrap;
+
+            &:nth-child(n + 1) {
+                width: 100%;
+                border: 1px solid red;
+            }
+
+            & .service__text {
+                order: 2;
+            }
+        }
+    }
+}

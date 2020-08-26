@@ -1,0 +1,34 @@
+.person {
+
+    &__name {      
+        color: $primary-color;
+        font-size: 24px;
+        word-wrap: normal;
+        width: 245px;
+        border: 1px solid #fff;
+    }
+
+    &__name, &__occupation {
+        font-family: 'Roboto Light';
+        line-height: 27px;
+        text-align: center;
+    }
+
+    &__occupation {
+        font-size: 16px;
+    }
+
+    &__pic {
+        margin: auto;
+        width: 100%;
+        height: 225px;
+        overflow: hidden;
+        object-position: center;
+        border-radius: 50%;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}

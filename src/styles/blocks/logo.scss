@@ -1,0 +1,22 @@
+.logo {
+    font-size: 28px;
+    line-height: 24px;
+    font-weight: 900;
+
+    &__link {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    &__circle {
+        flex: 0 0 65px;
+        height: 65px;
+    }
+
+    &__text {
+        flex: 0 0 97px;
+        margin-left: 3px;
+    }
+}

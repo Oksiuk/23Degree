@@ -1,0 +1,58 @@
+.portfolio-menu {
+
+    border: 1px solid $primary-color;
+    border-radius: 25px;
+
+    &__link {
+        display: inline-block;
+        font-family: 'Roboto Light';
+        font-size: 14px;
+        line-height: 38px;
+        padding: 0 30px;
+        text-transform: uppercase;
+        border-left: 1px solid $primary-color;
+
+        &:active, &:focus {
+            background-color: $primary-color;            
+            border-radius: 8px;
+            color: #fff;
+        }
+    }
+
+    li:first-child > .portfolio-menu__link {
+        border: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .portfolio-menu {
+        &__link {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .portfolio-menu {
+        border: none;
+        
+        &__item {
+            flex: 0 0 100%;
+            margin-bottom: 12px;
+            text-align: center;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__link {
+            width: 45%;
+            min-width: 250px;
+            background-color: $primary-color;        
+            border-radius: 8px;
+            border-left: none;
+        }
+    }
+}

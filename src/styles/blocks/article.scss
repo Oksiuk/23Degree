@@ -1,0 +1,37 @@
+.article {
+    padding: 0 15px;
+    margin-bottom: 30px;
+
+    &__img {        
+        margin-bottom: 22px;
+        overflow: hidden;
+
+        &  img {
+            height: 320px;
+            object-fit: cover;
+            width: 100%;
+        }
+    }  
+
+    &__link {
+        font-family: 'Roboto Light'; 
+        line-height: 1.33em;
+        color: $primary-color;
+
+        &:hover {
+            color: $primary-color_hover;
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .article {
+        &__link {
+            font-size: 14px;
+        }
+    }
+}

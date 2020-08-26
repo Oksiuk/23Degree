@@ -1,0 +1,42 @@
+.our-team {
+    padding-bottom: 65px;
+
+    &__person {
+        grid-column: span 1;
+        max-width: 245px;
+    }
+    
+    &__title {
+        @include section-title;
+    }
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 50px;
+        align-items: center;
+        justify-items: center;
+        margin: 35px 0 70px;
+    }
+}
+
+@media (max-width: 960px) {
+    .our-team {
+        &__wrap {
+            grid-template-columns: repeat(2, 1fr);         
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .our-team {
+        &__title {
+            @include section-title_sm;
+        }
+
+        &__wrap {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }        
+    }
+}

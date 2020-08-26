@@ -1,0 +1,33 @@
+.blog {
+    background: $light-bg;
+    padding-top: 30px;
+    padding-bottom: 36px;
+
+    &__article {
+        flex: 0 0 50%;
+    }
+
+    &__title {
+        @include section-title;
+        margin-bottom: 34px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .blog {
+        &__article {
+            flex: 0 0 100%;
+        }
+
+        &__title {
+            @include section-title_sm;
+        }
+    }
+
+}

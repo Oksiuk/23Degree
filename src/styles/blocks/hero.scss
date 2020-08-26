@@ -1,0 +1,57 @@
+.hero {
+    background: url(../img/hero-bg1.jpg) center no-repeat;
+    width: 100%;
+    height: 700px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+
+    &__subtitle {
+        display: block;
+        font-size: 36px;
+    }
+
+    &__title, &__subtitle {
+        font-size: 48px;
+        line-height: 44px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__wrapper {   
+        transform: translateY(156px);
+    }
+}
+ 
+@media screen and (max-width: 767px) {
+    .hero {
+        height: 100vh;
+
+        &__title {
+            font-size: 36px;
+            margin-bottom: 0px;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        &__title {
+            font-size: 28px;
+            line-height: 30px;
+            margin-bottom: 0px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+    }
+}

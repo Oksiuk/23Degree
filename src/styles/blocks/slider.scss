@@ -1,0 +1,15 @@
+.slider {
+    color: rgba($color: #fff, $alpha: 0.5);
+
+    #custom-handle {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: none;
+        background-color: $primary-color;
+        top: 50%;
+        margin-top: -.8em;
+        text-align: center;
+        line-height: 1.6em;
+      }
+}

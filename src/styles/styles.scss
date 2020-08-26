@@ -1,0 +1,25 @@
+@import '~reset-css';
+@import 'roboto.css';
+@import 'variables.scss';
+@import './common.scss';
+
+@import './blocks/advantage.scss';
+@import './blocks/advantages.scss';
+@import './blocks/article.scss'; 
+@import './blocks/blog.scss';
+@import './blocks/burger.scss';
+@import './blocks/citation.scss';
+@import './blocks/contacts.scss';
+@import'./blocks/footer.scss';
+@import './blocks/form.scss';
+@import './blocks/header.scss';
+@import './blocks/hero.scss';
+@import './blocks/interaction-process.scss';
+@import './blocks/logo.scss';
+@import './blocks/map.scss';
+@import './blocks/our-service.scss';
+@import './blocks/our-team.scss';
+@import './blocks/person.scss';
+@import './blocks/portfolio.scss';
+@import './blocks/portfolio-menu.scss';
+@import './blocks/service.scss';
